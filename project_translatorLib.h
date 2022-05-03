@@ -1,6 +1,6 @@
 /* 
  * File:   redfe017_project_translatorLib.h
- * Author: redfe017
+ * Authors: Nathan Redfern, Andy Lambrecht, Ben Deyle
  *
  * Created on April 15, 2022, 1:58 PM
  */

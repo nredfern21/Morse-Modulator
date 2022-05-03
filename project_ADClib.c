@@ -1,6 +1,6 @@
 /*
  * File:   redfe017_project_ADClib.c
- * Author: redfe017
+ * Authors: Nathan Redfern, Andy Lambrecht, Ben Deyle
  *
  * Created on April 15, 2022, 1:20 PM
  */
@@ -12,7 +12,7 @@
 
 void adc_init(void);
 
-void adc_init(void){
+void adc_init(void){        //ADC initialization 
     TRISAbits.TRISA0 =1;
     AD1PCFGbits.PCFG0 = 0;
     AD1CON2bits.VCFG = 0b000;
@@ -33,6 +33,6 @@ void adc_init(void){
     TMR3 = 0;
     T3CON = 0;
     T3CONbits.TCKPS = 0b10;
-    PR3 = 15624;
+    PR3 = 15624;        // 1/6 of a second delay - so ADC grabs value 6 times a second
     T3CONbits.TON = 1;
 }

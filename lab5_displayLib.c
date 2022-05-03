@@ -1,6 +1,6 @@
 /*
  * File:   redfe017_lab5_displayLib.c
- * Author: nathanredfern
+ * Authors: Nathan Redfern, Andy Lambrecht, Ben Deyle
  *
  * Created on April 2, 2022, 9:52 PM
  */

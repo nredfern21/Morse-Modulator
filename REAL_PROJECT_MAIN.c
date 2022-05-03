@@ -1,6 +1,6 @@
 /*
  * File:   REAL_PROJECT_MAIN.c
- * Author: redfe017
+ * Authors: Nathan Redfern, Andy Lambrecht, Ben Deyle
  *
  * Created on April 15, 2022, 1:14 PM
  */

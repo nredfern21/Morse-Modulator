@@ -1,6 +1,6 @@
 /*
  * File:   redfe017_project_translatorLib.c
- * Author: redfe017
+ * Authors: Nathan Redfern, Andy Lambrecht, Ben Deyle
  *
  * Created on April 15, 2022, 1:58 PM
  */
@@ -25,7 +25,7 @@ void __attribute__((__interrupt__,__auto_psv__)) _T2Interrupt(void)
     
 }
 
-void T2_init(void){
+void T2_init(void){     //timer initialization of 1 sec
     TMR2 =0;
     T2CON = 0;
     T2CONbits.TCKPS = 0b11;
@@ -38,14 +38,14 @@ void T2_init(void){
 int check_up_or_down(void){
     int val;
     val = ADC1BUF0;
-    if (val < 225){
+    if (val < 225){     // if latest value stored in ADC register return up or down
         return down;
     }else {
         return up;
     }
 }
 
-char MorseTable(int first, int second, int third, int fourth){
+char MorseTable(int first, int second, int third, int fourth){ // depending on the four values passed in, the function returns the corresponding morse letter
     
     if (first == dot && second == dash && third == NILL){return 'A';}
     else if (first == dash && second == dot && third == dot && fourth == dot){return 'B';}
