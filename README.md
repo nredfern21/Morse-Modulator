@@ -11,4 +11,4 @@ Hold flat  3 seconds after sequence to print to screen.
 
 Hold flat for 7 seconds for space.
 
-Holt falt for 15 seconds for a reset of screen.
+Hold flat for 15 seconds for a reset of screen.
